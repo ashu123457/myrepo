@@ -65,6 +65,6 @@ jobs:
             nohup python3 manage.py runserver 0.0.0.0:8099 > server.log 2>&1 &
           EOF
 
-      # Step 3: Cleanup - Remove SSH key
+      # Step 3: Cleanup - Remove SSH key less
       - name: Cleanup
         run: rm -f ssh_key
